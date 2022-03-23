@@ -2,7 +2,7 @@ import { getQueriesForElement } from "@testing-library/react";
 
     export const getGifs = async ( category ) => {
 
-        const url = `http://api.giphy.com/v1/gifs/search?q=${ encodeURI ( category ) }&limit=10&api_key=4KnQ42ibsjGLNaIfxZ0zHmc6IIpV897h`;
+        const url = `https://api.giphy.com/v1/gifs/search?q=${ encodeURI ( category ) }&limit=10&api_key=4KnQ42ibsjGLNaIfxZ0zHmc6IIpV897h`;
         
         
         const resp = await fetch(url);
